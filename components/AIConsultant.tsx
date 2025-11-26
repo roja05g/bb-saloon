@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Send, Sparkles, Bot, User } from 'lucide-react';
-import { getAIResponse } from '../services/geminiService';
 import { ChatMessage } from '../types';
 import { Button } from './Button';
 
@@ -32,9 +31,8 @@ export const AIConsultant: React.FC = () => {
       // Pass history excluding the very last user message which is 'newMessage' in the service call logic
       // Actually, for simplicity in the service wrapper, passing the full previous history is safer
       // The service wrapper reconstructs history.
-      const responseText = await getAIResponse(messages, input);
       
-      const aiMessage: ChatMessage = { role: 'model', text: responseText };
+      const aiMessage: ChatMessage = { role: 'model', text: '' };
       setMessages(prev => [...prev, aiMessage]);
     } catch (error) {
       console.error(error);

@@ -284,7 +284,7 @@ const App: React.FC = () => {
               </div>
             </div>
 
-            <Button type="submit" fullWidth className="text-lg">
+            <Button type="submit" fullWidth className="text-lg" onClick={() => console.log('Booking submitted', success)}>
               Confirm Booking
             </Button>
           </form>
