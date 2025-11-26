@@ -29,7 +29,7 @@ const App: React.FC = () => {
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center cursor-pointer" onClick={() => navigateTo(View.HOME)}>
             <Scissors className="h-8 w-8 text-stone-900 mr-2" />
-            <span className="text-2xl font-serif font-bold text-stone-900 tracking-tight">Lumière</span>
+            <span className="text-2xl font-serif font-bold text-stone-900 tracking-tight">B&B Unisex Saloon</span>
           </div>
 
           {/* Desktop Nav */}
@@ -37,7 +37,6 @@ const App: React.FC = () => {
             {[
               { label: 'Home', view: View.HOME },
               { label: 'Services', view: View.SERVICES },
-              { label: 'AI Consultant', view: View.CONSULTANT },
               { label: 'Contact', view: View.CONTACT },
             ].map((item) => (
               <button
@@ -71,7 +70,6 @@ const App: React.FC = () => {
             {[
               { label: 'Home', view: View.HOME },
               { label: 'Services', view: View.SERVICES },
-              { label: 'AI Consultant', view: View.CONSULTANT },
               { label: 'Contact', view: View.CONTACT },
               { label: 'Book Appointment', view: View.BOOKING },
             ].map((item) => (
@@ -203,7 +201,7 @@ const App: React.FC = () => {
             </div>
             <h2 className="text-3xl font-serif font-bold text-stone-900 mb-4">Booking Confirmed!</h2>
             <p className="text-stone-600 mb-8">
-              We've received your request. A confirmation email has been sent to you. We look forward to seeing you at Lumière.
+              We've received your request. A confirmation email has been sent to you. We look forward to seeing you at B&B Unisex Saloon.
             </p>
             <Button onClick={() => setSuccess(false)}>Return Home</Button>
           </div>
@@ -368,10 +366,10 @@ const App: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center mb-6 md:mb-0">
              <Scissors className="h-6 w-6 text-amber-500 mr-2" />
-             <span className="text-xl font-serif font-bold">Lumière</span>
+             <span className="text-xl font-serif font-bold">B&B Unisex Saloon</span>
           </div>
           <div className="text-stone-400 text-sm">
-            &copy; 2024 Lumière Salon. All rights reserved.
+            &copy; 2026 B&B Unisex Saloon. All rights reserved.
           </div>
         </div>
       </div>
@@ -390,7 +388,7 @@ const App: React.FC = () => {
             <Hero />
             <div className="py-16 bg-white">
               <div className="max-w-7xl mx-auto px-4 text-center">
-                <h3 className="text-2xl font-serif text-stone-900 mb-6">Why Choose Lumière?</h3>
+                <h3 className="text-2xl font-serif text-stone-900 mb-6">Why Choose B&B Unisex Saloon?</h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                   {[
                     { title: "Premium Products", desc: "We use only the finest, sustainable haircare lines.", icon: Star },
