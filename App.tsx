@@ -303,8 +303,8 @@ const App: React.FC = () => {
               </div>
               <div>
                 <h3 className="font-bold text-lg mb-1">Location</h3>
-                <p className="text-stone-600">1234 Boulevard of Light</p>
-                <p className="text-stone-600">Beverly Hills, CA 90210</p>
+                <p className="text-stone-600">Bloom & Blow Unisex saloon in mathikere</p>
+                <p className="text-stone-600">extension bangalore karnataka</p>
               </div>
             </div>
             
@@ -314,7 +314,7 @@ const App: React.FC = () => {
               </div>
               <div>
                 <h3 className="font-bold text-lg mb-1">Contact</h3>
-                <p className="text-stone-600">+1 (310) 555-0199</p>
+                <p className="text-stone-600"> 097390 33223</p>
                 <p className="text-stone-600">hello@lumieresalon.com</p>
               </div>
             </div>
@@ -326,12 +326,8 @@ const App: React.FC = () => {
               <div>
                 <h3 className="font-bold text-lg mb-1">Hours</h3>
                 <div className="grid grid-cols-2 gap-x-8 text-stone-600">
-                  <span>Mon - Fri</span>
-                  <span>9:00 AM - 8:00 PM</span>
-                  <span>Saturday</span>
-                  <span>9:00 AM - 6:00 PM</span>
-                  <span>Sunday</span>
-                  <span>Closed</span>
+                  <span>Monday-Sunday</span>
+                  <span>7:00 AM - 9:00 PM</span>
                 </div>
               </div>
             </div>
@@ -340,7 +336,7 @@ const App: React.FC = () => {
           <div className="mt-12 flex space-x-4">
             <button className="p-3 bg-stone-900 text-white rounded-full hover:bg-stone-800 transition-colors"><Instagram size={20} /></button>
             <button className="p-3 bg-stone-900 text-white rounded-full hover:bg-stone-800 transition-colors"><Facebook size={20} /></button>
-            <button className="p-3 bg-stone-900 text-white rounded-full hover:bg-stone-800 transition-colors"><Twitter size={20} /></button>
+            {/* <button className="p-3 bg-stone-900 text-white rounded-full hover:bg-stone-800 transition-colors"><Twitter size={20} /></button> */}
           </div>
         </div>
 
