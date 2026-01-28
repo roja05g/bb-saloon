@@ -7,6 +7,8 @@ import {
   Menu, X, Calendar, MapPin, Phone, Instagram, Facebook, Twitter, 
   Scissors, Clock, Star, ArrowRight, CheckCircle, Sparkles
 } from 'lucide-react';
+import heroDesktop from "./images/bbsaloonimage.jpg";
+import heroMobile from "./images/bbsaloonmobileimage.jpg";
 
 const App: React.FC = () => {
   const [currentView, setCurrentView] = useState<View>(View.HOME);
@@ -88,13 +90,20 @@ const App: React.FC = () => {
   );
 
   const Hero = () => (
-    <div className="relative pt-20">
+    <div className="relative mt-20">
       <div className="absolute inset-0 z-0">
-        <img 
-          src="https://picsum.photos/1920/1080?random=1" 
-          alt="Salon Interior" 
-          className="w-full h-[90vh] object-cover brightness-[0.85] saturate-[0.8]"
-        />
+       <img
+  src={heroMobile}
+  alt="Salon Interior"
+  className="block md:hidden w-full h-[80vh] object-cover object-top brightness-[0.9]"
+/>
+
+{/* Desktop image */}
+<img
+  src={heroDesktop}
+  alt="Salon Interior"
+   className="hidden md:block w-full h-[90vh] object-cover object-[50%_15%] brightness-[0.85]"
+/>
         <div className="absolute inset-0 bg-gradient-to-t from-stone-900/60 to-transparent"></div>
       </div>
       
